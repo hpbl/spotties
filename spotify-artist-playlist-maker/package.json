@@ -23,8 +23,8 @@
       "eslint --ext=js --ext=jsx --fix .",
       "git add"
     ],
-    "src/**/*.{css}": [
-      "stylelint \"**/*.css\"",
+    "src/**/*.css": [
+      "stylelint --fix",
       "git add"
     ]
   },
