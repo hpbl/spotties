@@ -27,8 +27,8 @@ npm start
 
 5. If everything goes according to plan you should see the app running on http://localhost:3000
 
-6. This project uses linting to keep a cohesive code-style, so installation of `eslint` and `stylelint plugins are recomended.
-  > If tou are using Atom, install [linter-eslint](https://atom.io/packages/linter-eslint) and [linter-stylelint](https://atom.io/packages/linter-stylelint)
+6. This project uses linting to keep a cohesive code-style, so installation of `eslint` and `stylelint` plugins are recommended.
+  > If you are using Atom, install [linter-eslint](https://atom.io/packages/linter-eslint) and [linter-stylelint](https://atom.io/packages/linter-stylelint)
 
 ## Contributing
 
