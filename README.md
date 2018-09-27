@@ -73,9 +73,9 @@ If you don't want to install plugins, don't worry, the linter is run everytime y
 
 ## Contributors
 
-Hilton Pintor ([@hpbl](github.com/hpbl))
+Hilton Pintor ([@hpbl](https://github.com/hpbl))
 
-Ricardo Barioni ([@rrbarioni](github.com/rrbarioni))
+Ricardo Barioni ([@rrbarioni](https://github.com/rrbarioni))
 
 Distributed under the TBD license. See ``LICENSE`` for more information.
 
