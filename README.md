@@ -9,7 +9,7 @@ If sometimes you just feel like listening to songs from a couple of specific art
 
 ## Development setup
 
-SpotifyArtistPlaylistMaker (working-name) was built using react and npm.
+SpotifyArtistPlaylistMaker was built using react and npm.
 
 1. Make sure you have [node](https://nodejs.org/en/) installed
 
@@ -27,6 +27,8 @@ npm start
 
 5. If everything goes according to plan you should see the app running on http://localhost:3000
 
+6. This project uses linting to keep a cohesive code-style, so installation of `eslint` and `stylelint plugins are recomended.
+  > If tou are using Atom, install [linter-eslint](https://atom.io/packages/linter-eslint) and [linter-stylelint](https://atom.io/packages/linter-stylelint)
 
 ## Contributing
 
