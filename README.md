@@ -7,7 +7,7 @@ If sometimes you just feel like listening to songs from a couple of specific art
 
 <!-- ![](header.png) -->
 
-## Development setup
+## Running
 
 SpotifyArtistPlaylistMaker was built using react and npm.
 
@@ -27,8 +27,6 @@ npm start
 
 5. If everything goes according to plan you should see the app running on http://localhost:3000
 
-6. This project uses linting to keep a cohesive code-style, so installation of `eslint` and `stylelint` plugins are recommended.
-  > If you are using Atom, install [linter-eslint](https://atom.io/packages/linter-eslint) and [linter-stylelint](https://atom.io/packages/linter-stylelint)
 
 ## Contributing
 
@@ -50,6 +48,21 @@ So if like us you want to learn or practice a skill, then come along. Help is mo
 6. Push to the branch
 
 7. Create a new Pull Request and wait for approval
+
+
+### Linting
+
+This project uses linting to keep a cohesive code-style, so installation of `eslint` and `stylelint` plugins for your editor/IDE are recommended.
+
+If you don't want to install plugins, don't worry, the linter is run everytime you attemp to make a commit, and if there are any errors, you'll can them on the terminal/command line.
+
+>If you are using another editor please add it along with it's plug-ins to the list below.
+
+#### On Atom
+ - install [language-babel](https://atom.io/packages/language-babel) paackage
+ - Install [linter-eslint](https://atom.io/packages/linter-eslint) and any other plug-in it requires
+ - Install [linter-stylelint](https://atom.io/packages/linter-stylelint) and any any other plug-in it requires
+ - On `line-ending-selector` package, change the default line ending to `LF`
 
 
 ## Release History
