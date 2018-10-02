@@ -1,7 +1,7 @@
 {
-  "name": "spotify-artist-playlist-maker",
+  "name": "spotties",
   "version": "0.1.0",
-  "homepage": "https://hpbl.github.io/SpotifyArtistPlaylistMaker",
+  "homepage": "https://hpbl.github.io/spotties",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.0",

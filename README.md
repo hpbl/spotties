@@ -1,4 +1,4 @@
-# SpotifyArtistPlaylistMaker (working-title)
+# spotties
 > Create Spotify playlists with songs from selected artists
 
 ![Help Wanted][help-shield]
@@ -9,7 +9,7 @@ If sometimes you just feel like listening to songs from a couple of specific art
 
 ## Running
 
-SpotifyArtistPlaylistMaker was built using react and npm.
+spotties was built using react and npm.
 
 1. Make sure you have [node](https://nodejs.org/en/) installed
 
@@ -30,15 +30,15 @@ npm start
 
 ## Contributing
 
-SpotifyArtistPlaylistMaker is an excuse to learn more about the crazy world of web and open-source development.
+spotties is an excuse to learn more about the crazy world of web and open-source development.
 
 So if like us you want to learn or practice a skill, then come along. Help is more than wanted!
 
-1. Look for [open issues](https://github.com/hpbl/SpotifyArtistPlaylistMaker/issues)
+1. Look for [open issues](https://github.com/hpbl/spotties/issues)
 
 2. Leave a comment saying you want to contribute
 
-3. [Fork](https://github.com/hpbl/SpotifyArtistPlaylistMaker/fork) this repository
+3. [Fork](https://github.com/hpbl/spotties/fork) this repository
 
 4. Create your feature branch:
 `git checkout -b #issueNumber-feature-name`
