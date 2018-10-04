@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-title">Welcome to spotties</h1>
+        <h1 className="App-title">Welcome to spotties!</h1>
       </header>
       <p className="App-intro">
           To get started, edit
