@@ -49,6 +49,8 @@ So if like us you want to learn or practice a skill, then come along. Help is mo
 
 7. Create a new Pull Request and wait for approval
 
+> If your code need to be tested by someone else, add "WIP: " at beginning of PR title and comment down what need to be tested.
+
 
 ### Linting
 
@@ -76,6 +78,8 @@ If you don't want to install plugins, don't worry, the linter is run everytime y
 Hilton Pintor ([@hpbl](https://github.com/hpbl))
 
 Ricardo Barioni ([@rrbarioni](https://github.com/rrbarioni))
+
+Victor Miranda ([@mvictorm](https://github.com/mvictorm))
 
 Distributed under the TBD license. See ``LICENSE`` for more information.
 
