@@ -1,23 +1,18 @@
 import React from 'react';
 import './App.css';
-import logo from './logo.svg';
 import setPageTitle from './helper';
+import Search from './Search/Search';
 
 function App() {
   setPageTitle();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-title">Welcome to spotties!!</h1>
-      </header>
-      <p className="App-intro">
-          To get started, edit
-        {' '}
-        <code>src/App.js</code>
-        {' '}
-and save to reload.
-      </p>
+      <div>
+        <h1>spotties</h1>
+        <p>all your favorite artist&apos;s songs in a single playlist</p>
+      </div>
+      {/* <input type="text" placeholder="search for artists you love ♥" /> */}
+      <Search placeholder="search for artists you love ♥" />
     </div>
   );
 }
