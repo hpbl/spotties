@@ -1,6 +1,7 @@
 {
-  "name": "spotify-artist-playlist-maker",
+  "name": "spotties",
   "version": "0.1.0",
+  "homepage": "https://hpbl.github.io/spotties",
   "private": true,
   "dependencies": {
     "cookie-parser": "^1.4.3",
@@ -36,7 +37,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -m '[ci skip] auto deploy' -d build"
   },
   "husky": {
     "hooks": {
