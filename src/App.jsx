@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import logo from './logo.svg';
 import setPageTitle from './helper';
+import SpotifyLogin from './spotifyLogin';
 
 function App() {
   setPageTitle();
@@ -18,6 +19,7 @@ function App() {
         {' '}
 and save to reload.
       </p>
+      <button type="submit" className="login" onClick={() => new SpotifyLogin()}>login</button>
     </div>
   );
 }
