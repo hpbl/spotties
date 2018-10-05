@@ -49,7 +49,7 @@ So if like us you want to learn or practice a skill, then come along. Help is mo
 
 7. Create a new Pull Request and wait for approval
 
-> If your code need to be tested by someone else, add "WIP: " at beginning of PR title and comment down what need to be tested.
+> If you've opened a pull request, but it isn't ready to be approved yet, add "WIP:" to it's title so someone else does not review and approve by accident
 
 
 ### Linting
@@ -64,7 +64,6 @@ If you don't want to install plugins, don't worry, the linter is run everytime y
  - install [language-babel](https://atom.io/packages/language-babel) paackage
  - Install [linter-eslint](https://atom.io/packages/linter-eslint) and any other plug-in it requires
  - Install [linter-stylelint](https://atom.io/packages/linter-stylelint) and any any other plug-in it requires
- - On `line-ending-selector` package, change the default line ending to `LF`
 
 
 ## Release History
