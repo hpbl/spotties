@@ -36,3 +36,9 @@ li {
 .selectedArtistsTitle > button {
   height: 25px;
 }
+
+.selectedArtistsList {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Search.css';
 import Suggestions from './Suggestions';
+import SelectedArtist from './SelectedArtist';
 
 class Search extends React.Component {
   constructor() {
@@ -91,7 +92,7 @@ class Search extends React.Component {
               <p>Selected artists</p>
               <button type="button">Create playlist</button>
             </div>
-            <ul>{selectedArtists.map(artist => <li>{artist.name}</li>)}</ul>
+            <ul className="selectedArtistsList">{selectedArtists.map(artist => <SelectedArtist artist={artist} />)}</ul>
           </div>
         )}
       </form>
