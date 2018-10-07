@@ -75,17 +75,25 @@ class Search extends React.Component {
   }
 
   render() {
-    const { results } = this.state;
+    const { results, selectedArtists } = this.state;
     const { placeholder } = this.props;
 
     return (
       <form>
         <input
           placeholder={placeholder}
-          // ref={(input) => { this.search = input; }}
           onChange={event => this.handleInputChange(event.target.value)}
         />
         <Suggestions results={results} toggleSelection={this.toggleArtistSelection} />
+        {selectedArtists.length > 0 && (
+          <div className="SelectedArtists">
+            <div className="selectedArtistsTitle">
+              <p>Selected artists</p>
+              <button type="button">Create playlist</button>
+            </div>
+            <ul>{selectedArtists.map(artist => <li>{artist.name}</li>)}</ul>
+          </div>
+        )}
       </form>
     );
   }

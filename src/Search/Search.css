@@ -20,3 +20,19 @@ ul {
 li {
   flex: 1;
 }
+
+.selectedArtistsTitle {
+  display: flex;
+  align-items: center;
+}
+
+.selectedArtistsTitle > p {
+  flex: 1;
+  text-align: left;
+  border-bottom: black solid 1px;
+  margin-right: 20px;
+}
+
+.selectedArtistsTitle > button {
+  height: 25px;
+}
