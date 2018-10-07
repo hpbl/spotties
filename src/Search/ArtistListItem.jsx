@@ -10,7 +10,7 @@ function ArtistListItem(props) {
       <input
         type="checkbox"
         value={artist}
-        defaultChecked={artist.selected}
+        checked={artist.selected}
         onChange={() => onSelection(artist)}
       />
       <li key={artist.name}>

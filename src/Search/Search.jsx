@@ -86,13 +86,22 @@ class Search extends React.Component {
           onChange={event => this.handleInputChange(event.target.value)}
         />
         <Suggestions results={results} toggleSelection={this.toggleArtistSelection} />
+
         {selectedArtists.length > 0 && (
           <div className="SelectedArtists">
             <div className="selectedArtistsTitle">
               <p>Selected artists</p>
               <button type="button">Create playlist</button>
             </div>
-            <ul className="selectedArtistsList">{selectedArtists.map(artist => <SelectedArtist artist={artist} />)}</ul>
+            <ul className="selectedArtistsList">
+              {selectedArtists.map((artist) => {
+                const clickHandler = this.toggleArtistSelection;
+                return (
+                  <SelectedArtist key={artist.name} artist={artist} clickHandler={clickHandler} />
+                );
+              })
+              }
+            </ul>
           </div>
         )}
       </form>
