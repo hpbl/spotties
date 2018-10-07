@@ -10,19 +10,34 @@ class Search extends React.Component {
     this.state = {
       query: '',
       results: [],
+      selectedArtists: [],
     };
+
+    this.toggleArtistSelection = this.toggleArtistSelection.bind(this);
   }
 
   getInfo() {
-    const { query } = this.state;
+    const { query, selectedArtists } = this.state;
 
     // TODO: Replace with API call result
-    const fakeResults = ['Mombojó', 'Marsa', 'Barro', 'Academia da Berlinda', 'Siba'];
+    const fakeResults = [
+      { name: 'Mombojó', selected: false },
+      { name: 'Marsa', selected: false },
+      { name: 'Barro', selected: false },
+      { name: 'Academia da Berlinda', selected: false },
+      { name: 'Siba', selected: false },
+    ];
 
     const filteredBands = fakeResults.filter((band) => {
-      const lowercasedBand = band.toLowerCase();
+      const lowercasedBand = band.name.toLowerCase();
       const lowercasedQuery = query.toLocaleLowerCase();
       return lowercasedBand.includes(lowercasedQuery);
+    });
+
+    filteredBands.forEach((band, index) => {
+      if (selectedArtists.filter(artist => artist.name === band.name).length > 0) {
+        filteredBands[index] = { ...filteredBands[index], selected: true };
+      }
     });
 
     this.setState({
@@ -41,6 +56,24 @@ class Search extends React.Component {
     });
   }
 
+  toggleArtistSelection(toggledArtist) {
+    const { results } = this.state;
+    const artistIndex = results.findIndex(artist => artist.name === toggledArtist.name);
+    results[artistIndex] = { ...results[artistIndex], selected: !results[artistIndex].selected };
+
+    let { selectedArtists } = this.state;
+    if (results[artistIndex].selected) {
+      selectedArtists.push(results[artistIndex]);
+    } else {
+      selectedArtists = selectedArtists.filter(artist => artist.name !== toggledArtist.name);
+    }
+
+    this.setState({
+      results,
+      selectedArtists,
+    });
+  }
+
   render() {
     const { results } = this.state;
     const { placeholder } = this.props;
@@ -52,7 +85,7 @@ class Search extends React.Component {
           // ref={(input) => { this.search = input; }}
           onChange={event => this.handleInputChange(event.target.value)}
         />
-        <Suggestions results={results} />
+        <Suggestions results={results} toggleSelection={this.toggleArtistSelection} />
       </form>
     );
   }
