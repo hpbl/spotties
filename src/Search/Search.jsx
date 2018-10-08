@@ -15,6 +15,11 @@ class Search extends React.Component {
     };
 
     this.toggleArtistSelection = this.toggleArtistSelection.bind(this);
+
+    fetch('https://vast-cliffs-56187.herokuapp.com/client_credentials')
+      .then(resp => resp.json())
+      .then(json => console.log(json.access_token))
+      .catch(error => console.log(error));
   }
 
   getInfo() {
