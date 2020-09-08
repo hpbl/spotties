@@ -9,8 +9,6 @@ jobs:
       only:
         - master
 
-    resource_class: large
-
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
