@@ -1,7 +1,23 @@
 {
-  "main.css": "static/css/main.4f206c62.css",
-  "main.css.map": "static/css/main.4f206c62.css.map",
-  "main.js": "static/js/main.362d9458.js",
-  "main.js.map": "static/js/main.362d9458.js.map",
-  "static/media/logo.svg": "static/media/logo.5d5d9eef.svg"
+  "files": {
+    "main.css": "/spotties/static/css/main.bb494bc5.chunk.css",
+    "main.js": "/spotties/static/js/main.f7c144df.chunk.js",
+    "main.js.map": "/spotties/static/js/main.f7c144df.chunk.js.map",
+    "runtime-main.js": "/spotties/static/js/runtime-main.3f20858f.js",
+    "runtime-main.js.map": "/spotties/static/js/runtime-main.3f20858f.js.map",
+    "static/js/2.464bd16d.chunk.js": "/spotties/static/js/2.464bd16d.chunk.js",
+    "static/js/2.464bd16d.chunk.js.map": "/spotties/static/js/2.464bd16d.chunk.js.map",
+    "index.html": "/spotties/index.html",
+    "precache-manifest.780b396685bd5338d2da3590b755c38d.js": "/spotties/precache-manifest.780b396685bd5338d2da3590b755c38d.js",
+    "service-worker.js": "/spotties/service-worker.js",
+    "static/css/main.bb494bc5.chunk.css.map": "/spotties/static/css/main.bb494bc5.chunk.css.map",
+    "static/js/2.464bd16d.chunk.js.LICENSE.txt": "/spotties/static/js/2.464bd16d.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/spotties/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3f20858f.js",
+    "static/js/2.464bd16d.chunk.js",
+    "static/css/main.bb494bc5.chunk.css",
+    "static/js/main.f7c144df.chunk.js"
+  ]
 }
